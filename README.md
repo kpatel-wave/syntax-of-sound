@@ -1,8 +1,14 @@
 # Syntax of Sound
 
-**Syntax of Sound** is a tiny Python project that tags short descriptions of orchestral moments with structural labels — things like `high-risk-solo`, `tempo-boundary`, or `dissonance-resolving-with-trumpets`.
+A tiny Python + Streamlit tool that tags short descriptions of orchestral moments with structural labels like `high-risk-solo`, `tempo-boundary`, or `dissonance-resolving-with-trumpets`.
 
-It’s a rule-based, explainable tool: instead of using a large model, it parses text and applies simple, transparent rules about tempo, solos, dissonance, and texture. That keeps it small enough to finish while still reflecting ideas from music theory, linguistics, and neuroscience.
+**Syntax of Sound** is a rule-based, explainable tool: instead of using a large model, it parses text and applies simple, transparent rules about tempo, solos, dissonance, and texture. That keeps it small enough to finish while still reflecting ideas from music theory, linguistics, and neuroscience.
+
+## Live demo
+
+Try Syntax of Sound in your browser (no installation required):
+
+https://syntax-of-sound.streamlit.app
 
 ## Example
 
@@ -20,7 +26,7 @@ Input:
 
 Parsed:
   composer: Mahler
-  movement: 3th movement
+  movement: 3rd movement
   tempo: 132
   instruments: ['french horn', 'horn']
 
@@ -31,7 +37,7 @@ Labels:
   - tempo-fluctuation
 ```
 
-## How to run
+## How to run (command-line)
 
 From the project folder:
 
@@ -53,8 +59,8 @@ The goal is not to build a full music-analysis system, but to prototype a “syn
 - linguistic-style tagging (labeling spans with categories),
 - and neuroscience-style thinking about tension, prediction, and resolution.
 
-## Live demo
+## How it’s built
 
-Try Syntax of Sound in your browser (no installation required):
-
-https://syntax-of-sound.streamlit.app
+- Core logic: Python, with simple regex/keyword rules in `labeler.py`.
+- Command-line interface: `main.py` using the standard `argparse` module.
+- Web demo: `app.py` built with [Streamlit](https://streamlit.io/), deployed via Streamlit Community Cloud.
