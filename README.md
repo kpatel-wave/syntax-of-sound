@@ -52,3 +52,9 @@ The goal is not to build a full music-analysis system, but to prototype a “syn
 - music performance (high-risk exposed lines, tempo edges),
 - linguistic-style tagging (labeling spans with categories),
 - and neuroscience-style thinking about tension, prediction, and resolution.
+
+## Live demo
+
+Try Syntax of Sound in your browser (no installation required):
+
+https://syntax-of-sound.streamlit.app
