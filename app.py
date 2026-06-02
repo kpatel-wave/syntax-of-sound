@@ -1,10 +1,10 @@
 import streamlit as st
-import labeler
 from labeler import analyze
 
 def main():
     st.title("Syntax of Sound")
-    st.write("DEBUG: Using labeler from:", labeler.__file__)
+    st.write("THIS IS THE NEW VERSION – if you see this, GitHub and Streamlit are in sync.")
+    # ...rest of your code...
 
 # User-facing names for labels
 LABEL_DISPLAY = {
